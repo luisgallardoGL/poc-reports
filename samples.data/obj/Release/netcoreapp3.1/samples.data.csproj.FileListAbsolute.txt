@@ -8,3 +8,13 @@ C:\Users\LuisGallardo\source\repos\odatatest\samples.data\obj\Release\netcoreapp
 C:\Users\LuisGallardo\source\repos\odatatest\samples.data\obj\Release\netcoreapp3.1\samples.data.csproj.CopyComplete
 C:\Users\LuisGallardo\source\repos\odatatest\samples.data\obj\Release\netcoreapp3.1\samples.data.dll
 C:\Users\LuisGallardo\source\repos\odatatest\samples.data\obj\Release\netcoreapp3.1\samples.data.pdb
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\bin\Release\netcoreapp3.1\samples.data.deps.json
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\bin\Release\netcoreapp3.1\samples.data.dll
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\bin\Release\netcoreapp3.1\samples.data.pdb
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\bin\Release\netcoreapp3.1\jose-jwt.dll
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\obj\Release\netcoreapp3.1\samples.data.AssemblyInfoInputs.cache
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\obj\Release\netcoreapp3.1\samples.data.AssemblyInfo.cs
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\obj\Release\netcoreapp3.1\samples.data.csproj.CoreCompileInputs.cache
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\obj\Release\netcoreapp3.1\samples.data.csproj.CopyComplete
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\obj\Release\netcoreapp3.1\samples.data.dll
+C:\Users\LuisGallardo\source\repos\poc-reports\samples.data\obj\Release\netcoreapp3.1\samples.data.pdb

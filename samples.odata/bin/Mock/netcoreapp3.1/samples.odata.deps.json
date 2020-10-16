@@ -28,7 +28,6 @@
           "Flurl.Http": "2.4.2",
           "Microsoft.AspNetCore.OData": "7.5.0",
           "samples.data": "1.0.0",
-          "jose-jwt": "2.4.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -447,9 +446,6 @@
             "assemblyVersion": "2.4.0.0",
             "fileVersion": "2.4.0.0"
           }
-        },
-        "compile": {
-          "jose-jwt.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
