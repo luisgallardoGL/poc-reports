@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>samples.graphql</name>
+    </assembly>
+    <members>
+        <member name="M:graphql.Queries.Reports.AssociationQueries.GetAssociations(Data.Repositories.IReportsRepository)">
+            <summary>
+            Gets all association.
+            </summary>
+            <param name="repository"></param>
+            <returns>The association.</returns>
+        </member>
+    </members>
+</doc>

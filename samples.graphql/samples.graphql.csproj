@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <Configurations>Debug;Release;Mock</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Charachters\**" />
+    <Compile Remove="Reports\**" />
+    <Compile Remove="Repositories\**" />
+    <Compile Remove="Reviews\**" />
+    <Content Remove="Charachters\**" />
+    <Content Remove="Reports\**" />
+    <Content Remove="Repositories\**" />
+    <Content Remove="Reviews\**" />
+    <EmbeddedResource Remove="Charachters\**" />
+    <EmbeddedResource Remove="Reports\**" />
+    <EmbeddedResource Remove="Repositories\**" />
+    <EmbeddedResource Remove="Reviews\**" />
+    <None Remove="Charachters\**" />
+    <None Remove="Reports\**" />
+    <None Remove="Repositories\**" />
+    <None Remove="Reviews\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="31.0.3" />
+    <PackageReference Include="Flurl" Version="2.8.2" />
+    <PackageReference Include="Flurl.Http" Version="2.4.2" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="10.5.3" />
+    <PackageReference Include="HotChocolate.AspNetCore.Playground" Version="10.5.3" />
+    <PackageReference Include="HotChocolate.AspNetCore.Voyager" Version="10.5.3" />
+    <PackageReference Include="HotChocolate.Types.Filters" Version="10.5.3" />
+    <PackageReference Include="HotChocolate.Types.Sorting" Version="10.5.3" />
+    <PackageReference Include="HotChocolate.Subscriptions.InMemory" Version="10.5.3" />
+    <PackageReference Include="Moq" Version="4.14.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\samples.data\samples.data.csproj" />
+  </ItemGroup>
+
+</Project>

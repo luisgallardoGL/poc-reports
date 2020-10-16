@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "samples.odata", "samples.odata\samples.odata.csproj", "{047CBDC6-602C-4760-A830-EEFC21887F3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "samples.graphql", "samples.graphql\samples.graphql.csproj", "{1E50F13C-726E-4F3C-BE24-AC77B3C18954}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "samples.data", "samples.data\samples.data.csproj", "{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Mock|Any CPU = Mock|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{047CBDC6-602C-4760-A830-EEFC21887F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047CBDC6-602C-4760-A830-EEFC21887F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047CBDC6-602C-4760-A830-EEFC21887F3D}.Mock|Any CPU.ActiveCfg = Mock|Any CPU
+		{047CBDC6-602C-4760-A830-EEFC21887F3D}.Mock|Any CPU.Build.0 = Mock|Any CPU
+		{047CBDC6-602C-4760-A830-EEFC21887F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047CBDC6-602C-4760-A830-EEFC21887F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E50F13C-726E-4F3C-BE24-AC77B3C18954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E50F13C-726E-4F3C-BE24-AC77B3C18954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E50F13C-726E-4F3C-BE24-AC77B3C18954}.Mock|Any CPU.ActiveCfg = Mock|Any CPU
+		{1E50F13C-726E-4F3C-BE24-AC77B3C18954}.Mock|Any CPU.Build.0 = Mock|Any CPU
+		{1E50F13C-726E-4F3C-BE24-AC77B3C18954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E50F13C-726E-4F3C-BE24-AC77B3C18954}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Mock|Any CPU.ActiveCfg = Release|Any CPU
+		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Mock|Any CPU.Build.0 = Release|Any CPU
+		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78542BB7-35AA-48C5-99CD-2EA2AAF5ABE3}
+	EndGlobalSection
+EndGlobal
