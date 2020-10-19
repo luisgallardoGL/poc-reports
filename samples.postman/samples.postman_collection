@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "359acd42-6ecb-440f-9d23-2f7063c78e63",
+		"name": "Samples.Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "select",
+			"item": [
+				{
+					"name": "select.graphql",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  associations {\r\n    nodes {\r\n      id\r\n      name\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{graphqlurl}}graphql/",
+							"host": [
+								"{{graphqlurl}}graphql"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "select.odata",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{odataurl}}odata/associations?$select=name,id",
+							"host": [
+								"{{odataurl}}odata"
+							],
+							"path": [
+								"associations"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "name,id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "filter",
+			"item": [
+				{
+					"name": "filter.graphql",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  associations(where:{\r\n    AND:[{id_gt: 20}, {id_lt: 30}]\r\n  }) {\r\n    nodes {\r\n      id\r\n      name\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{graphqlurl}}graphql/",
+							"host": [
+								"{{graphqlurl}}graphql"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter.odata",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{odataurl}}odata/associations?$select=name,id&$filter=contains(name,'P') eq true",
+							"host": [
+								"{{odataurl}}odata"
+							],
+							"path": [
+								"associations"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "name,id"
+								},
+								{
+									"key": "$filter",
+									"value": "id gt 20 and id lt 30",
+									"disabled": true
+								},
+								{
+									"key": "$filter",
+									"value": "contains(name,'P') eq true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "sort",
+			"item": [
+				{
+					"name": "sort.graphql",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "graphql",
+							"graphql": {
+								"query": "query {\r\n  associations(where:{\r\n    AND:[{id_gt: 20}, {id_lt: 30}]    \r\n  },\r\n  order_by:{\r\n    name: ASC\r\n  }) {\r\n    nodes {\r\n      id\r\n      name\r\n    }\r\n  }\r\n}",
+								"variables": ""
+							}
+						},
+						"url": {
+							"raw": "{{graphqlurl}}graphql/",
+							"host": [
+								"{{graphqlurl}}graphql"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sort.odata",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{odataurl}}odata/associations?$select=name,id&$orderby=name desc",
+							"host": [
+								"{{odataurl}}odata"
+							],
+							"path": [
+								"associations"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "name,id"
+								},
+								{
+									"key": "$filter",
+									"value": "id gt 20 and id lt 30",
+									"disabled": true
+								},
+								{
+									"key": "$filter",
+									"value": "contains(name,'P') eq true",
+									"disabled": true
+								},
+								{
+									"key": "$orderby",
+									"value": "name desc"
+								},
+								{
+									"key": "$orderby",
+									"value": "name asc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"variable": [
+		{
+			"id": "753f6e11-c630-40d1-bd0e-cc2f80cdf301",
+			"key": "graphqlurl",
+			"value": "http://localhost:44314/"
+		},
+		{
+			"id": "4e37bd98-1b2c-4f53-a922-2fdc9a3e64f0",
+			"key": "odataurl",
+			"value": "http://localhost:44309/"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
