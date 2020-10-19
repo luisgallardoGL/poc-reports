@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>RestfulApi_PoC</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Custom' " />
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.3" />
+    <PackageReference Include="AutoMapper" Version="10.1.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ResourceParameters\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+</Project>

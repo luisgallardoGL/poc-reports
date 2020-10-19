@@ -57,6 +57,55 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "select.restful",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{restfulurl}}reports/delinquencysummary?fields=OwnerName,currentbalance",
+							"host": [
+								"{{restfulurl}}reports"
+							],
+							"path": [
+								"delinquencysummary"
+							],
+							"query": [
+								{
+									"key": "OwnerName",
+									"value": "Juan",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "OwnerName,currentbalance"
+								},
+								{
+									"key": "sort",
+									"value": "ownername desc",
+									"disabled": true
+								},
+								{
+									"key": "Owner",
+									"value": "[LK]Diego",
+									"disabled": true
+								},
+								{
+									"key": "CurrentBalance",
+									"value": "[GT]10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -117,6 +166,55 @@
 								{
 									"key": "$filter",
 									"value": "contains(name,'P') eq true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter.restful",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{restfulurl}}reports/delinquencysummary?Owner=[LK]Diego",
+							"host": [
+								"{{restfulurl}}reports"
+							],
+							"path": [
+								"delinquencysummary"
+							],
+							"query": [
+								{
+									"key": "OwnerName",
+									"value": "Juan",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "OwnerName,currentbalance",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "ownername desc",
+									"disabled": true
+								},
+								{
+									"key": "Owner",
+									"value": "[LK]Diego"
+								},
+								{
+									"key": "CurrentBalance",
+									"value": "[GT]10",
+									"disabled": true
 								}
 							]
 						}
@@ -197,6 +295,54 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "sort.restful",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{restfulurl}}reports/delinquencysummary?fields=OwnerName,currentbalance&sort=ownername desc",
+							"host": [
+								"{{restfulurl}}reports"
+							],
+							"path": [
+								"delinquencysummary"
+							],
+							"query": [
+								{
+									"key": "OwnerName",
+									"value": "Juan",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "OwnerName,currentbalance"
+								},
+								{
+									"key": "sort",
+									"value": "ownername desc"
+								},
+								{
+									"key": "Owner",
+									"value": "[LK]Diego",
+									"disabled": true
+								},
+								{
+									"key": "CurrentBalance",
+									"value": "[GT]10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -204,12 +350,12 @@
 	],
 	"variable": [
 		{
-			"id": "753f6e11-c630-40d1-bd0e-cc2f80cdf301",
+			"id": "be0a4610-f5b3-4d46-bade-283ae595cec8",
 			"key": "graphqlurl",
 			"value": "http://localhost:44314/"
 		},
 		{
-			"id": "4e37bd98-1b2c-4f53-a922-2fdc9a3e64f0",
+			"id": "d0374be2-7868-48ab-8804-3e5d465aac1e",
 			"key": "odataurl",
 			"value": "http://localhost:44309/"
 		}

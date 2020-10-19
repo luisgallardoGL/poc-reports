@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "samples.graphql", "samples.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "samples.data", "samples.data\samples.data.csproj", "{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "samples.restful", "samples.restful\samples.restful.csproj", "{A53E9E32-4AC2-405E-AF7F-9883E0805364}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,12 @@ Global
 		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Mock|Any CPU.Build.0 = Debug|Any CPU
 		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F806026-C394-4DB1-AD90-1A4BF0ED0C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53E9E32-4AC2-405E-AF7F-9883E0805364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53E9E32-4AC2-405E-AF7F-9883E0805364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53E9E32-4AC2-405E-AF7F-9883E0805364}.Mock|Any CPU.ActiveCfg = Release|Any CPU
+		{A53E9E32-4AC2-405E-AF7F-9883E0805364}.Mock|Any CPU.Build.0 = Release|Any CPU
+		{A53E9E32-4AC2-405E-AF7F-9883E0805364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53E9E32-4AC2-405E-AF7F-9883E0805364}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
